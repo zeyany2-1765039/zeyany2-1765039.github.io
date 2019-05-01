@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Body Guard Application</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<h2>Body Guard Application</h2>
+<p>&nbsp;</p>
+
+<form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset class="form-horizontal" >
+		<legend>Account</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Email</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="email">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Password</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="password">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">confirm password</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="repeat_password">
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset class="form-horizontal" >
+		<legend>Personal Information</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Full name</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="name">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Country of Cizitenship</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="cityzenship">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Height</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="height">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Weight</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="Weight">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Sex</label>
+			<div class="col-sm-9">
+				<select class="form-control" name="Sex">
+					<option value="" selected="true">Choose a Sex</option>
+					<option value="M">Male</option>
+					<option value="F">Female</option>
+					<option value="NA">Unknown</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">age</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="age">
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<legend>Ability</legend>
+		<div class="form-group row">
+			<label class="col-sm-12 control-label">Are you legally able to be own and use guns in the U.S.?</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="yes">Yes
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="legal" value="no">No
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-12 control-label">What's your confident abilities? (check all that apply)</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_pt" value="pistoal">
+						Pistoal
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_ft" value="Longgun">
+						Long Gun
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_sl" value="hand-to-hand combat">
+						Hand-to-hand combat
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="position_tp" value="Strategy">
+						Strategy
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-12 control-label">Hours available</label>
+			<div class="col-sm-12">
+				<table class="table table-bordered">
+					<tr>
+						<td></td>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>
+					</tr>
+					<tr>
+						<th>From</th>
+						<td><input class="form-control" type="time" name="su_from"></td>
+						<td><input class="form-control" type="time" name="mo_from"></td>
+						<td><input class="form-control" type="time" name="tu_from"></td>
+						<td><input class="form-control" type="time" name="we_from"></td>
+						<td><input class="form-control" type="time" name="th_from"></td>
+						<td><input class="form-control" type="time" name="fr_from"></td>
+						<td><input class="form-control" type="time" name="sa_from"></td>
+					</tr>
+					<tr>
+						<th>Until</th>
+						<td><input class="form-control" type="time" name="su_until"></td>
+						<td><input class="form-control" type="time" name="mo_until"></td>
+						<td><input class="form-control" type="time" name="tu_until"></td>
+						<td><input class="form-control" type="time" name="we_until"></td>
+						<td><input class="form-control" type="time" name="th_until"></td>
+						<td><input class="form-control" type="time" name="fr_until"></td>
+						<td><input class="form-control" type="time" name="sa_until"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="form-group">
+			<label class="control-label">Describe one of your best jobs</label>
+			<textarea class="form-control" name="deserve" rows="6"></textarea>
+		</div>
+		<div class="form-group">
+			<label class="control-label">Describe one time that the client doesn't fully cooperate</label>
+			<textarea class="form-control" name="deserve" rows="6"></textarea>
+		</div>
+		<div class="form-group">
+			<label class="control-label">How much money you are looking for making and describe why you deserve that</label>
+			<textarea class="form-control" name="project" rows="6"></textarea>
+		</div>
+	</fieldset>
+
+	<p>&nbsp;</p>
+
+	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
+
+	<p>&nbsp;</p>
+
+</form>
+</div><!-- close .container -->
+</body>
+</html>
